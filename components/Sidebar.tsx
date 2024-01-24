@@ -1,5 +1,5 @@
 "use client";
-
+import { GiMusicalScore } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
@@ -23,6 +23,13 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
   const player = usePlayer();
 
   const routes = useMemo(() => [
+    {
+       icon: GiMusicalScore,
+       label :'Musify',
+       href: '/'
+    
+    
+    },
     {
       icon: HiHome,
       label: 'Home',
